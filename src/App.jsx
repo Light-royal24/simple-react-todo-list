@@ -7,18 +7,7 @@ import Todooutput from './TodoOutPut'
 function App() {
 
   const [task, setTask] = useState('')
-  const [todos, setTodos] = useState([
-    {
-      text: "task",
-      id: 1,
-      completed: true
-    },
-    {
-      text: "task 2",
-      id: 2,
-      completed: false
-    },
-  ])
+  const [todos, setTodos] = useState([])
 
   const handleChange = (e) => {
     setTask(e.target.value); 
